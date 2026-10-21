@@ -1,0 +1,3 @@
+com\trainconcierge\provider\DatabaseTrainProviderTest.class
+com\trainconcierge\service\TrainServiceTest.class
+com\trainconcierge\provider\RailRadarTrainProviderTest.class
