@@ -48,9 +48,12 @@ public class NotificationService {
         notificationRepository.saveAll(unread);
     }
 
-    public void markRead(Long notificationId) {
+    public void markRead(Long notificationId, Long userId) {
         Notification n = notificationRepository.findById(notificationId)
                 .orElseThrow(() -> new RuntimeException("Notification not found"));
+        if (!n.getUser().getId().equals(userId)) {
+            throw new RuntimeException("Access denied");
+        }
         n.setRead(true);
         notificationRepository.save(n);
     }

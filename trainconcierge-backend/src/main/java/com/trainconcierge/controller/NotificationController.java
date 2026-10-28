@@ -49,8 +49,11 @@ public class NotificationController {
     }
 
     @PatchMapping("/{id}/read")
-    public ResponseEntity<ApiResponse<Void>> markRead(@PathVariable Long id) {
-        notificationService.markRead(id);
+    public ResponseEntity<ApiResponse<Void>> markRead(
+            @PathVariable Long id,
+            HttpServletRequest request) {
+        Long userId = extractUserId(request);
+        notificationService.markRead(id, userId);
         return ResponseEntity.ok(ApiResponse.success("Notification marked as read", null));
     }
 }

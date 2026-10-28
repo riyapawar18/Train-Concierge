@@ -29,10 +29,9 @@ public class AuthService {
             throw new RuntimeException("Email already registered");
         }
 
+        // Public registration always creates a passenger. Admin accounts are seeded
+        // or promoted directly in the database, never by the registration payload.
         User.Role role = User.Role.PASSENGER;
-        if ("ADMIN".equalsIgnoreCase(request.getRole())) {
-            role = User.Role.ADMIN;
-        }
 
         User user = User.builder()
                 .username(request.getUsername())
