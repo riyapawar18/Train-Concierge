@@ -1,0 +1,13 @@
+Hi [(${recipientName})],
+
+[(${title})]
+
+[(${body})]
+[(${detailsSection})]
+[(${actionLabel})]: [(${actionUrl})]
+
+You received this because a train on one of your journeys has an update.
+
+TrainConcierge - your journey, protected.
+Academic project. Not affiliated with Indian Railways or IRCTC.
+(c) [(${year})] TrainConcierge

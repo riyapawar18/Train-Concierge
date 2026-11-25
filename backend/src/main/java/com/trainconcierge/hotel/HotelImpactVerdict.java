@@ -1,0 +1,6 @@
+package com.trainconcierge.hotel;
+
+public enum HotelImpactVerdict {
+    UNAFFECTED, LATE_ARRIVAL_OK, PAST_CUTOFF_EXTENSION_POSSIBLE,
+    PAST_CUTOFF_NO_EXTENSION, NIGHT_LOST, CHECKOUT_PRESSURE
+}

@@ -1,0 +1,14 @@
+Hi [(${recipientName})],
+
+[(${title})]
+
+[(${body})]
+[(${detailsSection})]
+[(${actionLabel})]: [(${actionUrl})]
+
+Keep this message for your records. Your booking is available in My Journeys.
+Open My Journeys and choose View ticket to print this booking or save it as a PDF.
+
+TrainConcierge - your journey, protected.
+Academic project. Not affiliated with Indian Railways or IRCTC.
+(c) [(${year})] TrainConcierge

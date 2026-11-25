@@ -1,0 +1,233 @@
+.splash {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgb(249 115 22 / 0.14) 0%, transparent 55%),
+    linear-gradient(165deg, #0b1f4b 0%, #13306b 100%);
+  color: #fff;
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+.splash--fading {
+  opacity: 0;
+}
+
+.splash__glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.splash__glow--top {
+  top: -30%;
+  right: -12%;
+  width: min(70vw, 640px);
+  aspect-ratio: 1;
+  background: rgb(59 130 246 / 0.2);
+}
+
+.splash__glow--bottom {
+  bottom: -38%;
+  left: -14%;
+  width: min(60vw, 520px);
+  aspect-ratio: 1;
+  background: rgb(249 115 22 / 0.12);
+}
+
+.splash__content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 5vh, 3rem) 1.25rem 0.75rem;
+  text-align: center;
+}
+
+.splash__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.9rem, 2.4vh, 1.4rem);
+}
+
+.splash__mark {
+  display: grid;
+  place-items: center;
+  width: clamp(3.25rem, 9vw, 5rem);
+  aspect-ratio: 1;
+  border-radius: clamp(1rem, 2.4vw, 1.5rem);
+  background: linear-gradient(145deg, #f97316 0%, #ea580c 100%);
+  color: #fff;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.16) inset,
+    0 0 0 6px rgb(249 115 22 / 0.12),
+    0 18px 40px -12px rgb(249 115 22 / 0.65);
+}
+
+.splash__mark svg {
+  width: 54%;
+  height: 54%;
+}
+
+.splash__wordmark {
+  margin: 0;
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(1.9rem, 6vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.splash__tagline {
+  margin: clamp(0.6rem, 1.8vh, 1rem) 0 0;
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  line-height: 1.5;
+  color: rgb(255 255 255 / 0.72);
+}
+
+.splash-track {
+  width: clamp(12rem, 42vw, 21rem);
+  margin-top: clamp(1.1rem, 3.2vh, 2rem);
+}
+
+.splash-track__line {
+  position: relative;
+  height: 2.1rem;
+}
+
+.splash-track__sleepers {
+  position: absolute;
+  inset: 0.35rem 0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(255 255 255 / 0.26) 0 2px,
+    transparent 2px 16px
+  );
+  animation: splash-sleepers 900ms linear infinite;
+}
+
+.splash-track__rail {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 2px;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 0.55);
+}
+
+.splash-track__rail--top {
+  top: 0.2rem;
+}
+
+.splash-track__rail--bottom {
+  bottom: 0.2rem;
+}
+
+.splash-track__train {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.625rem;
+  background: #f97316;
+  color: #fff;
+  box-shadow:
+    0 0 0 4px rgb(249 115 22 / 0.16),
+    0 8px 24px rgb(249 115 22 / 0.45);
+  transform: translate(-50%, -50%);
+  animation: splash-ride 3200ms cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+.splash-track__train svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.splash__status {
+  width: min(20rem, 72vw);
+  margin-top: clamp(1.4rem, 4vh, 2.4rem);
+}
+
+.splash__progress {
+  position: relative;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: rgb(255 255 255 / 0.16);
+}
+
+.splash__progress-fill {
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  border-radius: inherit;
+  background: #f97316;
+  box-shadow: 0 0 12px rgb(249 115 22 / 0.7);
+  transition: width 120ms linear;
+}
+
+.splash__status-text {
+  margin: 0.7rem 0 0;
+  font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.55);
+}
+
+@keyframes splash-sleepers {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 16px;
+  }
+}
+
+@keyframes splash-ride {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash {
+    transition-duration: 1ms;
+  }
+
+  .splash-track__sleepers {
+    animation: none;
+  }
+
+  .splash-track__train {
+    left: 50%;
+    opacity: 1;
+    animation: none;
+  }
+
+  .splash__progress-fill {
+    transition: none;
+  }
+}

@@ -1,0 +1,511 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StatusBadge > renders ACCEPTED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="ACCEPTED"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Accepted
+</span>
+`;
+
+exports[`StatusBadge > renders ACTIVE consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="ACTIVE"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Active
+</span>
+`;
+
+exports[`StatusBadge > renders AVAILABLE consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="AVAILABLE"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Available
+</span>
+`;
+
+exports[`StatusBadge > renders BOOKED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="BOOKED"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Booked
+</span>
+`;
+
+exports[`StatusBadge > renders CANCELLED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="CANCELLED"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Cancelled
+</span>
+`;
+
+exports[`StatusBadge > renders CLOSED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-neutral/15 bg-neutral-soft text-neutral"
+  data-slot="badge"
+  data-status="CLOSED"
+  data-tone="neutral"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Closed
+</span>
+`;
+
+exports[`StatusBadge > renders COMPLETED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-neutral/15 bg-neutral-soft text-neutral"
+  data-slot="badge"
+  data-status="COMPLETED"
+  data-tone="neutral"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Completed
+</span>
+`;
+
+exports[`StatusBadge > renders CONFIRMED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="CONFIRMED"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Confirmed
+</span>
+`;
+
+exports[`StatusBadge > renders DECLINED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="DECLINED"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Declined
+</span>
+`;
+
+exports[`StatusBadge > renders DELAYED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="DELAYED"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Delayed
+</span>
+`;
+
+exports[`StatusBadge > renders DISRUPTED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="DISRUPTED"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Disrupted
+</span>
+`;
+
+exports[`StatusBadge > renders DIVERTED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="DIVERTED"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Diverted
+</span>
+`;
+
+exports[`StatusBadge > renders EXPIRED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-neutral/15 bg-neutral-soft text-neutral"
+  data-slot="badge"
+  data-status="EXPIRED"
+  data-tone="neutral"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Expired
+</span>
+`;
+
+exports[`StatusBadge > renders FAILED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="FAILED"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Failed
+</span>
+`;
+
+exports[`StatusBadge > renders HELD consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-info/15 bg-info-soft text-info"
+  data-slot="badge"
+  data-status="HELD"
+  data-tone="info"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Held
+</span>
+`;
+
+exports[`StatusBadge > renders INACTIVE consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-neutral/15 bg-neutral-soft text-neutral"
+  data-slot="badge"
+  data-status="INACTIVE"
+  data-tone="neutral"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Inactive
+</span>
+`;
+
+exports[`StatusBadge > renders LIMITED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="LIMITED"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Limited
+</span>
+`;
+
+exports[`StatusBadge > renders MONITORING consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="MONITORING"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Monitoring
+</span>
+`;
+
+exports[`StatusBadge > renders NEW consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-info/15 bg-info-soft text-info"
+  data-slot="badge"
+  data-status="NEW"
+  data-tone="info"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  New
+</span>
+`;
+
+exports[`StatusBadge > renders ON_TIME consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="ON_TIME"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  On time
+</span>
+`;
+
+exports[`StatusBadge > renders OPEN consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="OPEN"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Open
+</span>
+`;
+
+exports[`StatusBadge > renders PAID consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="PAID"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Paid
+</span>
+`;
+
+exports[`StatusBadge > renders PENDING consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-info/15 bg-info-soft text-info"
+  data-slot="badge"
+  data-status="PENDING"
+  data-tone="info"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Pending
+</span>
+`;
+
+exports[`StatusBadge > renders RAC consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="RAC"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  RAC
+</span>
+`;
+
+exports[`StatusBadge > renders READ consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-neutral/15 bg-neutral-soft text-neutral"
+  data-slot="badge"
+  data-status="READ"
+  data-tone="neutral"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Read
+</span>
+`;
+
+exports[`StatusBadge > renders REBOOKED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="REBOOKED"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Rebooked
+</span>
+`;
+
+exports[`StatusBadge > renders REFUNDED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-neutral/15 bg-neutral-soft text-neutral"
+  data-slot="badge"
+  data-status="REFUNDED"
+  data-tone="neutral"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Refunded
+</span>
+`;
+
+exports[`StatusBadge > renders RESCHEDULED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-info/15 bg-info-soft text-info"
+  data-slot="badge"
+  data-status="RESCHEDULED"
+  data-tone="info"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Rescheduled
+</span>
+`;
+
+exports[`StatusBadge > renders RESOLVED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-success/15 bg-success-soft text-success"
+  data-slot="badge"
+  data-status="RESOLVED"
+  data-tone="success"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Resolved
+</span>
+`;
+
+exports[`StatusBadge > renders SOLD_OUT consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="SOLD_OUT"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Sold out
+</span>
+`;
+
+exports[`StatusBadge > renders SUSPENDED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-danger/15 bg-danger-soft text-danger"
+  data-slot="badge"
+  data-status="SUSPENDED"
+  data-tone="danger"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Suspended
+</span>
+`;
+
+exports[`StatusBadge > renders UNREAD consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-info/15 bg-info-soft text-info"
+  data-slot="badge"
+  data-status="UNREAD"
+  data-tone="info"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Unread
+</span>
+`;
+
+exports[`StatusBadge > renders UPCOMING consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-info/15 bg-info-soft text-info"
+  data-slot="badge"
+  data-status="UPCOMING"
+  data-tone="info"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Upcoming
+</span>
+`;
+
+exports[`StatusBadge > renders WAITLISTED consistently 1`] = `
+<span
+  class="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium whitespace-nowrap border-warning/15 bg-warning-soft text-warning"
+  data-slot="badge"
+  data-status="WAITLISTED"
+  data-tone="warning"
+>
+  <span
+    aria-hidden="true"
+    class="size-1.5 rounded-full bg-current"
+  />
+  Waitlisted
+</span>
+`;

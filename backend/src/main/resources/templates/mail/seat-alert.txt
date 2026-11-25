@@ -1,0 +1,13 @@
+Hi [(${recipientName})],
+
+[(${title})]
+
+[(${body})]
+[(${detailsSection})]
+[(${actionLabel})]: [(${actionUrl})]
+
+Seat counts can change quickly. Book only when your plans are confirmed.
+
+TrainConcierge - your journey, protected.
+Academic project. Not affiliated with Indian Railways or IRCTC.
+(c) [(${year})] TrainConcierge

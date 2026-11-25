@@ -1,0 +1,13 @@
+Hi [(${recipientName})],
+
+[(${title})]
+
+[(${body})]
+[(${detailsSection})]
+[(${actionLabel})]: [(${actionUrl})]
+
+Open your journey for the latest details. Your booking is unchanged.
+
+TrainConcierge - your journey, protected.
+Academic project. Not affiliated with Indian Railways or IRCTC.
+(c) [(${year})] TrainConcierge

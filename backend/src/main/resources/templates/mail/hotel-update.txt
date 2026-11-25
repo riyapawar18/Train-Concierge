@@ -1,0 +1,13 @@
+Hi [(${recipientName})],
+
+[(${title})]
+
+[(${body})]
+[(${detailsSection})]
+[(${actionLabel})]: [(${actionUrl})]
+
+Hotel details are simulated for this academic project.
+
+TrainConcierge - your journey, protected.
+Academic project. Not affiliated with Indian Railways or IRCTC.
+(c) [(${year})] TrainConcierge

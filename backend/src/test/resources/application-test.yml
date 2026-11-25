@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:trainconcierge-auth;MODE=MySQL;DB_CLOSE_DELAY=-1;NON_KEYWORDS=USER
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  flyway:
+    enabled: false
+
+app:
+  cors:
+    allowed-origin: http://localhost:5173
+  jwt:
+    secret: test-jwt-secret-0123456789-abcdefghijklmnop
+    expiry-minutes: 60
+  demo:
+    password:
+  # A developer's real Gmail entry in backend/.env is imported into every test run, so the test
+  # profile switches delivery off by default. Suites that must send (RegisteredUserEmailDeliveryTest)
+  # re-enable it against a local SMTP mailbox.
+  mail:
+    enabled: false
+
+payment:
+  mode: SIMULATED
+  expiry-minutes: 15
+
+logging:
+  level:
+    org.hibernate.SQL: warn

@@ -1,0 +1,32 @@
+:root {
+  /* Brand */
+  --brand-navy: #1e3a6e;
+  --brand-navy-dark: #0b1f4b;
+  --accent-orange: #f97316;
+  --accent-orange-soft: #fdba74;
+
+  /* Surfaces and text */
+  --surface: #ffffff;
+  --page: #f3f5f9;
+  --border: #d8dee9;
+  --text: #14213d;
+  --muted: #5b6b87;
+  --surface-muted: #eef2f8;
+
+  /* Status */
+  --success: #166534;
+  --success-soft: #dcfce7;
+  --warning: #92400e;
+  --warning-soft: #fef3c7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --info: #1e40af;
+  --info-soft: #dbeafe;
+  --neutral: #334155;
+  --neutral-soft: #e2e8f0;
+
+  /* Type and elevation */
+  --font-ui:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --elevation-card: 0 1px 2px rgb(20 33 61 / 0.06), 0 8px 24px -12px rgb(20 33 61 / 0.18);
+}

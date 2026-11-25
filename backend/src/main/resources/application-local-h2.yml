@@ -1,0 +1,39 @@
+# Local demo database: file-based H2 that survives restarts.
+# MySQL remains the real database for production; this profile is for local development only.
+# Flyway's MySQL-specific migrations are not run here — Hibernate manages the schema instead.
+#
+# HOW TO RUN:
+#   mvn spring-boot:run -Dspring-boot.run.profiles=local-h2,demo
+#
+# No environment variables are required for local development; safe defaults are provided below.
+# For production, set JWT_SECRET to a strong random value (openssl rand -base64 48).
+
+spring:
+  datasource:
+    url: ${LOCAL_DB_URL:jdbc:h2:file:./data/trainconcierge;MODE=MySQL;DB_CLOSE_DELAY=-1;NON_KEYWORDS=USER}
+    driver-class-name: org.h2.Driver
+    username: ${LOCAL_DB_USER:sa}
+    password: ${LOCAL_DB_PASSWORD:password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: false
+  h2:
+    console:
+      enabled: false
+
+# ── Local-only defaults (override with real values in production) ────────────────
+app:
+  jwt:
+    # 44-character base64 string = 32+ bytes — satisfies the JwtService minimum.
+    # This is a local-development-only placeholder. NEVER use in production.
+    secret: ${JWT_SECRET:bG9jYWwtZGV2LW9ubHktandrLXNlY3JldC0wMTIzNDU2Nzg5YWJj}
+  demo:
+    # Password for all demo accounts (admin + 5 passengers).
+    # Set DEMO_PASSWORD env var to override.
+    password: ${DEMO_PASSWORD:Str0ng#Pass}
+  mail:
+    # Skip email delivery in local dev — rows will stay FAILED but the app works.
+    enabled: ${MAIL_ENABLED:false}

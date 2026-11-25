@@ -1,0 +1,93 @@
+/* Keyframes for the payment flow. Scoped to the payment feature so the
+   global stylesheet stays untouched. */
+
+@keyframes pay-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes pay-bar {
+  from {
+    width: 4%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes pay-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@keyframes pay-draw {
+  from {
+    stroke-dashoffset: 60;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pay-pop {
+  from {
+    transform: translateY(10px) scale(0.97);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pay-sweep {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(220%);
+  }
+}
+
+.pay-pulse {
+  animation: pay-pulse 1.4s ease-in-out infinite;
+}
+
+.pay-bar {
+  animation: pay-bar 1.5s ease-out forwards;
+}
+
+.pay-ring {
+  animation: pay-ring 1.1s ease-out 0.15s forwards;
+}
+
+.pay-check {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: pay-draw 0.5s ease-out 0.25s forwards;
+}
+
+.pay-pop {
+  animation: pay-pop 0.35s ease-out forwards;
+}
+
+.pay-sweep {
+  animation: pay-sweep 1.1s linear infinite;
+}
